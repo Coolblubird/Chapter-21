@@ -157,8 +157,8 @@ public class Exercise21_11 extends Application{
 				int getYear = cboYear.getValue() - 2000;
 				String name = tfName.getText();
 				
-				if (mapForBoy.get(getYear).get(name.toLowerCase())!= null) {
-					lblResult.setText("Your name was ranked " + (mapForBoy.get(getYear).get(name.toLowerCase())) + " between the top ten baby names.");
+				if (mapForBoy.get(getYear).get(name.toLowerCase().trim())!= null) {
+					lblResult.setText("Your name was ranked " + (mapForBoy.get(getYear).get(name.toLowerCase().trim())) + " between the top ten baby names.");
 				}
 				else{
 					lblResult.setText("I'm sorry, but your name was not on the rankings.");
